@@ -4,11 +4,18 @@
 package org.example;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
-
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        Aldeao meu = new Aldeao();
+        Arqueiro dois = new Arqueiro();
+        Cavaleiro um = new Cavaleiro();
+
+        System.out.println(meu.atacar());
+        System.out.println(meu.mover());
+
+        System.out.println(dois.atacar());
+        System.out.println(dois.mover());
+
+        System.out.println(um.atacar());
+        System.out.println(um.mover());
     }
 }
